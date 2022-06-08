@@ -1,0 +1,5 @@
+site-info:
+  js:
+    js/update-time.js: {}
+  dependencies:
+    - core/jquery

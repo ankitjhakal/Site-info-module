@@ -1,0 +1,14 @@
+site_location_time.get_current_time:
+  path: '/get-time'
+  defaults:
+    _controller: site_location_time.get_current_time:getTimeBasedOnTimeZone
+  requirements:
+    _permission: 'access content'
+
+site_location_time.site_info_config_form:
+  path: '/admin/config/site-info'
+  defaults:
+    _form: '\Drupal\site_location_time\Form\SiteInfoConfigForm'
+    _title: 'Site Information'
+  requirements:
+    _permission: 'administer site configurations'

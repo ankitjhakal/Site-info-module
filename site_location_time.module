@@ -1,0 +1,20 @@
+<?php
+
+/**
+ * @file
+ * Helper funtions.
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function site_location_time_theme() {
+  return [
+    'site_info' => [
+      'variables' => [
+        'city' => NULL,
+        'country' => NULL,
+      ]
+    ],
+  ];
+}

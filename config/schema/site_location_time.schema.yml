@@ -1,0 +1,13 @@
+site_location_time.settings:
+  type: config_object
+  label: 'Site location $ Time settings'
+  mapping:
+    country:
+      type: string
+      label: 'Config to get country name.'
+    city:
+      type: string
+      label: 'Config to get city name.'
+    timezone:
+      type: string
+      label: 'To store timzone information'

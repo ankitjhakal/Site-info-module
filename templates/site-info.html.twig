@@ -1,0 +1,21 @@
+{#
+/**
+ * @file
+ * Theme to display site info.
+ *
+ * Available variables:
+ * - city: The city name.
+ * - country: The country name.
+ */
+#}
+
+{% if city and country %}
+  <div class='site-info-parent'>
+    <div class='site-info-child'>
+      <div class='location'>Location: <span>{{ city }}</span>, <span>{{ country }}</span>
+      <div class='time'>Current Time: <span id='time'></span></div>
+    </div>
+  </div>
+{% else %}
+  <p>{{ 'Information data is not Available.'|t }} </p>
+{% endif %}
